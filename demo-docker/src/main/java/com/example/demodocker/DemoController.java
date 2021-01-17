@@ -11,5 +11,11 @@ public class DemoController {
 	public String greeting(@PathVariable String name) {
             return "Pupo ----> HOLA........!!  " + name;
 	}
+	
+	
+	@GetMapping("/bonjour/{name}")
+	public String bonjour(@PathVariable String name) {
+            return "Pupo ----> Bonjour........!!  " + name;
+	}
 
 }
