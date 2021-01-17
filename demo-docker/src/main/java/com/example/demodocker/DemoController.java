@@ -12,7 +12,6 @@ public class DemoController {
             return "Pupo ----> HOLA........!!  " + name;
 	}
 	
-	
 	@GetMapping("/bonjour/{name}")
 	public String bonjour(@PathVariable String name) {
             return "Pupo ----> Bonjour........!!  " + name;
