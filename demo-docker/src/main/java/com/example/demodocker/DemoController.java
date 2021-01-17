@@ -9,7 +9,13 @@ public class DemoController {
 
 	@GetMapping("/greet/{name}")
 	public String greeting(@PathVariable String name) {
-            return "Pupo ----> HOLA........!!  " + name;
+            return "[inserted this]Pupo ----> HOLA........!!  " + name;
 	}
 
+
+
+	@GetMapping("/salute/{name}")
+	public String salute(@PathVariable String name) {
+		return "[inserted this]Pupo ----> Salute........!!  " + name;
+	}
 }
